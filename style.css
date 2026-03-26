@@ -3,6 +3,23 @@ body{
   background:#0a0a0a;
   color:white;
   font-family:Poppins;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND ANIMATION */
+.bg-animation{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:linear-gradient(45deg,#00f0ff,#8b5cf6,#000);
+  background-size:400% 400%;
+  animation:gradientMove 10s infinite alternate;
+  z-index:-1;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%;}
+  100%{background-position:100% 50%;}
 }
 
 /* NAV */
@@ -15,17 +32,17 @@ body{
 .logo{
   font-family:Orbitron;
   color:#00f0ff;
-  text-shadow:0 0 10px #00f0ff;
+  text-shadow:0 0 15px #00f0ff;
 }
 
 /* HERO */
 .hero{
   text-align:center;
-  padding:100px 20px;
+  padding:120px 20px;
 }
 
 .hero h1{
-  font-size:32px;
+  font-size:34px;
   font-family:Orbitron;
 }
 
@@ -51,24 +68,14 @@ body{
 }
 
 .btn:hover{
-  transform:scale(1.1);
-  box-shadow:0 0 20px #00f0ff;
+  transform:scale(1.15);
+  box-shadow:0 0 25px #00f0ff;
 }
 
-/* CARD */
-.card{
-  margin:30px;
-  padding:20px;
-  background:#111;
-  border-radius:20px;
-  box-shadow:0 0 20px rgba(0,255,255,0.2);
-  text-align:center;
-}
-
-/* ANIMATION */
+/* TEXT ANIMATION */
 .fade-in{
   opacity:0;
-  transform:translateY(30px);
+  transform:translateY(40px);
   animation:fadeIn 1.5s forwards;
 }
 
