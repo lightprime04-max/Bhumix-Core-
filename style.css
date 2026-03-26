@@ -1,0 +1,80 @@
+body{
+  margin:0;
+  background:#0a0a0a;
+  color:white;
+  font-family:Poppins;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+}
+
+.logo{
+  font-family:Orbitron;
+  color:#00f0ff;
+  text-shadow:0 0 10px #00f0ff;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:32px;
+  font-family:Orbitron;
+}
+
+/* BUTTONS */
+.btn{
+  padding:12px 25px;
+  margin:10px;
+  border-radius:12px;
+  cursor:pointer;
+  border:none;
+  transition:0.3s;
+  font-weight:bold;
+}
+
+.primary{
+  background:linear-gradient(45deg,#00f0ff,#8b5cf6);
+}
+
+.secondary{
+  border:2px solid #00f0ff;
+  background:none;
+  color:#00f0ff;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #00f0ff;
+}
+
+/* CARD */
+.card{
+  margin:30px;
+  padding:20px;
+  background:#111;
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(0,255,255,0.2);
+  text-align:center;
+}
+
+/* ANIMATION */
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  animation:fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
