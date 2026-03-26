@@ -1,20 +1,15 @@
 function goToChannel(){
-  window.open("https://youtube.com/@bhumixcore", "_blank");
-}
-<script>
-function goToChannel(){
-  window.open("https://youtube.com/@bhumixcore", "_blank");
+  window.open("https://youtube.com/@bhumixcore","_blank");
 }
 
 function goToShop(){
-  alert("Shop page coming soon 🚀");
+  window.location.href="shop.html";
 }
 
 function goToStart(){
-  alert("Getting started... 🚀");
+  window.location.href="start.html";
 }
 
 function goToLogin(){
-  alert("Login system coming soon 🔐");
+  window.location.href="login.html";
 }
-</script>
